@@ -1,12 +1,14 @@
 {
-  "name": "hexium-font-gh-pages",
+  "name": "development-ethereum-font",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+   "fmt": "npx prettier --write src/"
   },
   "keywords": [],
   "author": "sam bacha",
