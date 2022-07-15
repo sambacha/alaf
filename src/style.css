@@ -2,8 +2,8 @@
 
 /* latin */
 @font-face {
-  font-family: 'Scancardium';  
-  src: url("../fonts/Scancardium.woff2") format('woff2');
+  font-family: "Scancardium";
+  src: url("../fonts/Scancardium.woff2") format("woff2");
   src: url("../fonts/Scancardium.ttf") format("truetype");
   src: url("../fonts/Scancardium.woff") format("woff");
   font-weight: normal;
@@ -12,30 +12,28 @@
 }
 
 @font-face {
-  font-family: 'Scancardium';
+  font-family: "Scancardium";
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url("../fonts/Scancardium.woff2") format('woff2');
+  src: url("../fonts/Scancardium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Scancardium';
+  font-family: "Scancardium";
   font-style: italic;
   font-weight: bold;
   font-display: swap;
-  src: url("../fonts/Scancardium.woff2") format('woff2');
+  src: url("../fonts/Scancardium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'Scancardium';
+  font-family: "Scancardium";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("../fonts/Scancardium.woff2") format('woff2');
+  src: url("../fonts/Scancardium.woff2") format("woff2");
 }
-
-
 
 /* Box sizing rules */
 *,
@@ -71,13 +69,12 @@ html {
   }
 }
 
-
 body.scancardium {
-  font-family: 'Scancardium', Menlo, Monaco, Consola, monospace;
+  font-family: "Scancardium", Menlo, Monaco, Consola, monospace;
 }
 
 body {
-  font-family: Menlo, Monaco, Consolas, 'Scancardium', monospace;
+  font-family: Menlo, Monaco, Consolas, "Scancardium", monospace;
   line-height: 1.8;
 
   max-width: 80ch;
@@ -101,9 +98,9 @@ body {
   font-size: 15px;
   line-height: 22px;
   color: #252519;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 
 .numeral {
   font-family: Scancardium;
@@ -116,7 +113,6 @@ h1 {
   font-size: 3.2rem;
   line-height: 1;
 }
-
 
 /* Prevent textarea from overflowing */
 textarea {
@@ -132,8 +128,7 @@ article > * + * {
 code,
 pre,
 kbd {
-  font-family: Menlo, Monaco, Consolas, 'Scancardium',
-    monospace;
+  font-family: Menlo, Monaco, Consolas, "Scancardium", monospace;
   font-size: 85%;
 }
 pre {
@@ -169,11 +164,11 @@ table {
   counter-increment: caption;
 }
 /* add bottom border on column table headings  */
-table tr > th[scope='col'] {
+table tr > th[scope="col"] {
   border-bottom: 1.36px solid black;
 }
 /* add right border on row table headings  */
-table tr > th[scope='row'] {
+table tr > th[scope="row"] {
   border-right: 1.36px solid black;
 }
 table > tbody > tr:first-child > td,
@@ -202,7 +197,7 @@ caption {
 }
 
 caption::before {
-  content: 'Table ' counter(caption) '. ';
+  content: "Table " counter(caption) ". ";
   font-weight: bold;
 }
 
@@ -231,7 +226,7 @@ nav li {
   display: block;
 }
 nav li:before {
-  content: counters(item, '.') ' ';
+  content: counters(item, ".") " ";
   counter-increment: item;
   padding-right: 0.85rem;
 }
