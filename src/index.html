@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Scancardium</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" media="all" href="style.css" />
+</head>
+
+<body id="top">
+  <header>
+    <h1><span class="latex">L<span>a</span>T<span>e</span>X</span>.css</h1>
+    <p class="author">
+      Vincent Dörig <br />
+      May 2020
+    </p>
+  </header>
+
+  <div class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      This almost class-less CSS library turns your HTML document into a
+      website that looks like a
+      <span class="latex">L<span>a</span>T<span>e</span>X</span>
+      document. Write semantic HTML, add
+      <code class="language-html">&lt;link rel="stylesheet"
+          href="https://latex.now.sh/style.css"&gt;</code>
+      to the <code class="language-html">&lt;head&gt;</code> of your project and you are good to go.
+      The source code can be found on GitHub at
+      <a href="https://github.com/vincentdoerig/latex-css">https://github.com/vincentdoerig/latex-css</a>.
+    </p>
+  </div>
+
+  <nav role="navigation" class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#getting-started">Getting Started</a></li>
+      <li>
+        <a href="#class-based-elements">Class-based Elements</a>
+        <ol>
+          <li><a href="#author-abstract">Author and Abstract</a></li>
+          <li>
+            <a href="#tdpl">Theorems, Definitions and Proofs</a>
+            <ol>
+              <li><a href="#proofs-theorems">Proofs & Theorems</a></li>
+              <li><a href="#lemmas">Lemmas</a></li>
+              <li><a href="#definitions">Definitions</a></li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li><a href="#language-support">Language Support</a></li>
+      <li><a href="#sidenotes">Sidenotes</a></li>
+      <li><a href="#alternative-typeface">Alternative Typeface</a></li>
+      <li>
+        <a href="#html-elements">HTML Elements</a>
+        <ol>
+          <li><a href="#text-formatting">Text Formatting</a></li>
+          <li><a href="#blockquotes">Blockquotes</a></li>
+          <li><a href="#definition-lists">Definition Lists</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#images">Images</a></li>
+        </ol>
+      </li>
+      <li>
+        <a href="#miscellaneous">Miscellaneous</a>
+        <ol>
+          <li><a href="#scroll-overflow">Scroll Overflow</a></li>
+          <li><a href="#syntax-highlighting">Syntax Highlighting</a></li>
+        </ol>
+      </li>
+    </ol>
+  </nav>
+
+  <main>
+    <article>
+      <h2 id="getting-started">Getting Started</h2>
+      <ul>
+        <li>
+          Add
+          <code class="language-html">&lt;link rel="stylesheet"
+              href="https://latex.now.sh/style.css"&gt;</code>
+          to the <code class="language-html">&lt;head&gt;</code> of your website or install the
+          package using <code>npm install latex.css</code>.
+        </li>
+        <li>
+          (optional) Add any classes to elements described in the
+          <a href="#class-based-elements">next section</a>.
+        </li>
+        <li>
+          (optional) If you need support for
+          <span class="latex">L<span>a</span>T<span>e</span>X</span> math, add
+          the following script to include
+          <a href="https://www.mathjax.org/">MathJax</a>:
+          <pre><code class="language-html">&lt;script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"&gt;&lt;/script&gt;</code></pre>
+        </li>
+        <li>
+          (optional) If you need syntax highlighting, add
+          the following script to include
+          <a href="https://prismjs.com/">Prism</a> and the Prism LaTeX stylesheet (or use any other):
+          <pre><code class="language-html">&lt;link rel="stylesheet" href="https://latex.now.sh/prism/prism.css"&gt;
+
+&lt;script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"&gt;&lt;/script&gt;</code></pre>
+        </li>
+        <li>Done.</li>
+      </ul>
+
+      <h2 id="class-based-elements">Class-based Elements</h2>
+      <h3 id="author-abstract">Author and Abstract</h3>
+      <p>
+        Use the following code to add an author and abstract to your document.
+        It will look like <a href="#top">this</a>.
+      </p>
+
+      <pre>
+        0x44532e0c322c0e3f7aff9180e872ff52fbe3538d4a26fd9829209d623d7dce17
+        </pre>
+        
+        <h1> 0x56650833ddef615fddd2b3082b06438fa050a6b8dce83151df1c2a31b7828bd8 </h1>
+        
+        <p>0x4e4fb994039591f4c65c47e19629052a80943ab4226f7aec730cde5831a10672</p>
+</html>

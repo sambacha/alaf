@@ -1,0 +1,14 @@
+# -*- mode: gitattributes; -*-
+*.woff2       binary
+
+VERSION export-subst
+git-hash export-subst
+
+*.sh text eol=lf
+
+# git archive ignore 
+/.github            export-ignore
+/.editorconfig      export-ignore
+/.gitattributes     export-ignore
+/.gitignore         export-ignore
+/test               export-ignore

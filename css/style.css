@@ -1,0 +1,16 @@
+/* latin */
+@font-face {
+  font-family: 'Scancardium';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Scancardium'), local('Scancardium'), url(../Scancardium.woff2) format('woff2');
+}
+
+body {
+  font-family: 'Scancardium' monospace;
+  font-size: 15px;
+  line-height: 22px;
+  color: #252519;
+  margin: 0; padding: 0;
+}

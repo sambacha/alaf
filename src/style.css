@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* latin */
+@font-face {
+  font-family: 'Scancardium';  
+  src: url("../fonts/Scancardium.woff2") format('woff2');
+  src: url("../fonts/Scancardium.ttf") format("truetype");
+  src: url("../fonts/Scancardium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Scancardium';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/Scancardium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Scancardium';
+  font-style: italic;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/Scancardium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Scancardium';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Scancardium.woff2") format('woff2');
+}
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Make default font-size 1rem and add smooth scrolling to anchors */
+html {
+  font-size: 1rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+body.scancardium {
+  font-family: 'Scancardium', Menlo, Monaco, Consola, monospace;
+}
+
+body {
+  font-family: Menlo, Monaco, Consolas, 'Scancardium', monospace;
+  line-height: 1.8;
+
+  max-width: 80ch;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+
+  counter-reset: theorem;
+  counter-reset: definition;
+  counter-reset: sidenote-counter;
+
+  color: hsl(0, 5%, 10%);
+  background-color: hsl(210, 20%, 98%);
+
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: Scancardium;
+  font-size: 15px;
+  line-height: 22px;
+  color: #252519;
+  margin: 0; padding: 0;
+}
+
+
+.numeral {
+  font-family: Scancardium;
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+
+/* Prevent textarea from overflowing */
+textarea {
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Styles for inline code or code snippets */
+code,
+pre,
+kbd {
+  font-family: Menlo, Monaco, Consolas, 'Scancardium',
+    monospace;
+  font-size: 85%;
+}
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 4px;
+  background: hsl(210, 28%, 93%);
+}
+pre code {
+  font-size: 95%;
+  position: relative;
+}
+kbd {
+  background: hsl(210, 5%, 100%);
+  border: 1px solid hsl(210, 5%, 70%);
+  border-radius: 2px;
+  padding: 2px 4px;
+  font-size: 75%;
+}
+
+/* Better tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: auto;
+  max-width: 100%;
+  border-top: 2.27px solid black;
+  border-bottom: 2.27px solid black;
+  /* display: block; */
+  overflow-x: auto; /* does not work because element is not block */
+  /* white-space: nowrap; */
+  counter-increment: caption;
+}
+/* add bottom border on column table headings  */
+table tr > th[scope='col'] {
+  border-bottom: 1.36px solid black;
+}
+/* add right border on row table headings  */
+table tr > th[scope='row'] {
+  border-right: 1.36px solid black;
+}
+table > tbody > tr:first-child > td,
+table > tbody > tr:first-child > th {
+  border-top: 1.36px solid black;
+}
+table > tbody > tr:last-child > td,
+table > tbody > tr:last-child > th {
+  border-bottom: 1.36px solid black;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  line-height: 1.1;
+}
+/* Table caption */
+caption {
+  text-align: left;
+  font-size: 0.923em;
+  /* border-bottom: 2pt solid #000; */
+  padding: 0 0.25em 0.25em;
+  width: 100%;
+  margin-left: 0;
+}
+
+caption::before {
+  content: 'Table ' counter(caption) '. ';
+  font-weight: bold;
+}
+
+/* allow scroll on the x-axis */
+.scroll-wrapper {
+  overflow-x: auto;
+}
+
+/* if a table is wrapped in a scroll wrapper,
+  the table cells shouldn't wrap */
+.scroll-wrapper > table td {
+  white-space: nowrap;
+}
+
+/* Center align the title */
+h1:first-child {
+  text-align: center;
+}
+
+/* Nested ordered list for ToC */
+nav ol {
+  counter-reset: item;
+  padding-left: 2rem;
+}
+nav li {
+  display: block;
+}
+nav li:before {
+  content: counters(item, '.') ' ';
+  counter-increment: item;
+  padding-right: 0.85rem;
+}

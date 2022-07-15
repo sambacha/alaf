@@ -1,0 +1,17 @@
+{
+  "name": "hexium-font-gh-pages",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "sam bacha",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
